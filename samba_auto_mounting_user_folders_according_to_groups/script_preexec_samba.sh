@@ -1,4 +1,5 @@
 #!/bin/bash
+
 grupos=`groups $1 | cut -d: -f2`
  
 if [ ! -d "/srv/files/users/$1" ]; then
