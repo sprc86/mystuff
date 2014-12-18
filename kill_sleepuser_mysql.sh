@@ -14,7 +14,7 @@ cat allprocesses | awk '{if ($4 == "insert_user_here" && $10 == "Sleep") print $
 for sleep_id in `cat ./id`
 do
   # Kill each id identified earlier.
-  mysqladmin -u root -p"yourpassword" KILL $sleep_id ;
+  mysqladmin -u root -p"admin_password" KILL $sleep_id ;
 done
 
 # Remove files
