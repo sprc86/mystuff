@@ -17,6 +17,6 @@ SSH_VALIDATE=`grep -w $SSH_IP$ /tmp/nettmp`
 
 if [ ! $(echo $?) = 0  ]; then
 
-echo "User $LOGNAME logged using IP $SSH_IP"| mailx -s "$HOSTNAME User $LOGNAME connected by SSH" admin@myisp.net
+echo "User $LOGNAME logged using IP $SSH_IP"| mailx -s "$HOSTNAME User $LOGNAME connected by SSH" admin@example.net
 
 fi
