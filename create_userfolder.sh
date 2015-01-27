@@ -11,16 +11,14 @@ echo "setting up its ownership and 700 permissions..."
 
 if [ ! -d "/mnt/storage/personal/$username" ]; then
 
-mkdir /mnt/storage/personal/$username &&
+    mkdir /mnt/storage/personal/$username &&
 
-chown $username:"domain users" /mnt/storage/personal/$username &&
+    chown $username:"domain users" /mnt/storage/personal/$username &&
 
-mkdir /mnt/storage/personal/$username &&
-
-echo "sucessfully created user personal folder and it's permissions!"
+    echo "sucessfully created user personal folder and it's permissions!"
 
 else
 
-echo "user folder already exist!"
+    echo "user folder already exist!"
 
 fi
