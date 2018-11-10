@@ -7,11 +7,11 @@
 
 url=http://validate.jsontest.com
 
-#json=$(curl -X POST -d "json={1:1,2:2,3:3,4:4}"  $url | grep '"size"' | cut -d":" -f2)
+json=$(curl -X POST -d "json={1:1,2:2,3:3,4:4}"  $url | grep '"size"' | cut -d":" -f2)
 
 #var3=$(curl -X POST -d "json={$key1,$key2,$key3,$key4}"  http://validate.jsontest.com | grep '"size"' | cut -d":" -f2)
 
-json=1
+#json=1
 
 if [ "$json" -ge "4" ]; then   
 	echo "equal or greater than 4 - OK"; exit $json
