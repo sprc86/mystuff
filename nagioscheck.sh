@@ -25,5 +25,11 @@ fi
 
 
 if [ "$json" -lt "2" ]; then
+        echo "equal to 2 - WARNING"; exit $json
+fi
+
+
+
+if [ "$json" -lt "2" ]; then
 	echo "less than 2 - CRITICAL"; exit $json
 fi
