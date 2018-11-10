@@ -24,7 +24,7 @@ if [ "$json" -eq "3" ]; then
 fi
 
 
-if [ "$json" -lt "2" ]; then
+if [ "$json" -eq "2" ]; then
         echo "equal to 2 - WARNING"; exit $json
 fi
 
